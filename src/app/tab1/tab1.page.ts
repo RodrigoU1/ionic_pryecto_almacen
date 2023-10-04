@@ -63,7 +63,7 @@ export class Tab1Page {
 
   
 
-  title = "Sistema de inventario"
+  // title = "Sistema de inventario"
 
   masVendidos:productSlide[] = [
     {

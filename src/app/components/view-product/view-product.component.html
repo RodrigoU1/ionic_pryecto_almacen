@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-text class="ion-text-center" color="dark">
+      <h3>Nueva venta</h3> 
+    </ion-text>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="close()" fill="clear">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col offset="2" size="8"></ion-col>
+      <ion-img src="https://m.media-amazon.com/images/I/81Yiw8Zk0uL._AC_UF1000,1000_QL80_.jpg" alt="">
+      </ion-img>
+      <ion-list>
+        <ion-item>
+          <ion-label>Nombre: Maruchan Chile Piquin</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Descripción: Son fideos</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Precio: {{17 | currency}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Stock: 200</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

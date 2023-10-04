@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ModalController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-new-product',
-  templateUrl: './new-product.component.html',
-  styleUrls: ['./new-product.component.scss'],
+  selector: 'app-new-sale',
+  templateUrl: './new-sale.component.html',
+  styleUrls: ['./new-sale.component.scss'],
 })
-export class NewProductComponent  implements OnInit {
+export class NewSaleComponent  implements OnInit {
 
   formProduct: FormGroup = this.fb.group({
     name: [''],
@@ -31,6 +31,10 @@ export class NewProductComponent  implements OnInit {
 
   ngOnInit() {}
 
+  onSearchChange(event:any){
+
+  }
+  
   save(){
     console.log(this.formProduct.value);
     this.close();
